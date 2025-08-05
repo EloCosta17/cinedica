@@ -11,25 +11,14 @@ body{
 header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    gap: 20px;
-
-    > img {
-        height: 60px;
-    }
+    gap: 100px;
 }
 .container{
     padding-top: 25px;
     padding-bottom: 40px;
 }
-.pesquisa {
-    flex-grow: 1;
-    max-width: 300px;
-    width: 10vw;
-}
 input{
-    width: 100%;
+    width: 700px;
     height: 40px;
 }
 button{
