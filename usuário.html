@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Perfil do Usuário - CineDica</title>
+  <link rel="stylesheet" href="../cinedicas/styles/styleusuario.css" />
+</head>
+<body>
+
+  <header>
+    <img src="logocinedica-removebg-preview.png" alt="logo">
+    <div class="pesquisa">
+      <input type="text" placeholder="pesquise o tipo de filme que deseja">
+    </div>
+    <div class="icones">
+      <a href="usuário.html"><img src="íconecoração-removebg-preview.png" alt="erro ao carregar"></a>
+      <a href="login.html"><img src="íconeusuario-removebg-preview.png" alt="erro ao carregar"></a>
+      <button id="toggleDarkMode"><img src="íconetemas-removebg-preview.png" alt="erro ao carregar"></button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="ladingpage2.html">Home</a>
+    <a href="padrão2.html">Lançamentos</a>
+    <a href="populares.html">Populares</a>
+    <a href="classicos.html">Clássicos</a>
+  </nav>
+
+  <main>
+    <section class="perfil">
+      <div class="formulario-perfil">
+        <div class="info-usuario">
+          <span class="emoji-usuario" aria-label="ícone usuário" role="img">👤</span>
+          <div>
+            <p><strong>Nome de usuário</strong></p>
+            <p>E-mail:</p>
+          </div>
+        </div>
+
+        <p class="titulo-descricao"><strong>Adicionar descrição:</strong></p>
+        <input type="text">
+
+        <div class="dados-pessoais">
+          <p><strong>Adicionar informações pessoais:</strong></p>
+          <ul>
+            <li>Idade:</li><input type="text">
+            <li>Sexo:</li><input type="text">
+            <li>Data de nascimento:</li><input type="text">
+            <li>Gênero favorito:</li><input type="text">
+            <li>Filme favorito:</li><input type="text">
+          </ul>
+        </div>
+      </div>
+
+      <div class="generos-favoritos">
+        <img src="grafico-generos.png" alt="Gráfico de gêneros favoritos" class="grafico" />
+        <div class="legenda-generos">
+          <p><strong>Filmes favoritos:</strong></p>
+          <ul class="lista-generos">
+            <li><span class="cor romance"></span> Romance</li>
+            <li><span class="cor terror"></span> Terror</li>
+            <li><span class="cor drama"></span> Drama</li>
+            <li><span class="cor aventura"></span> Aventura</li>
+            <li><span class="cor suspense"></span> Suspense</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="logocinedica2.png" alt="logocinedica" id="logocinedica2">
+    <section>
+      <h4>SIGA-NOS:</h4>
+      <p>@Cinedica_oficial</p>
+      <p>(84) 9808-1288</p>
+    </section>
+    <section>
+      <h4>LINKS RÁPIDOS:</h4>
+      <p>Política de Privacidade</p>
+      <p>Termos de Uso</p>
+    </section>
+    <section>
+      <h4>SUPORTE:</h4>
+      <p>Central de Ajuda</p>
+      <p>Fale com o Suporte</p>
+      <p>Enviar Feedback</p>
+      <p>Relatar Problema no Site</p>
+    </section>
+  </footer>
+
+  <div class="copyright">
+    Copyright © 2025 CineDica – Todos os direitos reservados
+  </div>
+
+  <script src="scriptlading.js"></script>
+
+</body>
+</html>
