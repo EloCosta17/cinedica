@@ -1,0 +1,248 @@
+body{
+    margin: 0%;
+    font-family: Verdana;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+input{
+    width: 700px;
+    height: 50px;
+}
+button{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+}
+.icones{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    gap: 30px;
+}
+.container{
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+nav{
+    background-color: rgba(104, 102, 197, 1);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#classificaçao{
+    margin-left: 75px;
+}
+.filme1{
+    width: 17%;
+    height: 350px;
+    border-radius: 30px;
+}
+.filme2{
+    width: 17%;
+    height: 350px;
+    border-radius: 30px;
+}
+.poster{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.filmes1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.filmes2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+footer{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(104, 102, 197, 1);
+    padding:  25px 0px;
+    gap: 100px;
+    color: white;
+}
+#logocinedica2{
+    width: 250px;
+    height: 70px;
+}
+.copyright{
+    text-align: center;
+    background-color: rgba(104, 102, 197, 1);
+    margin-top: 2px;
+    color: white;
+}
+.filme1:hover{
+    width: 18%;
+    height: 370px;
+    transition: 0.5s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+.filme2:hover{
+    width: 18%;
+    height: 370px;
+    transition: 0.5s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+input:hover{
+    background-color: lightgray;
+    transition: 0.5s;
+}
+body.dark-mode {
+    background-color:  rgba(13, 13, 40, 1);
+    color: white;
+}
+
+body.dark-mode nav,
+body.dark-mode footer,
+body.dark-mode .copyright {
+    background-color: rgba(104, 102, 197, 1);
+    color: white;
+}
+
+body.dark-mode input {
+    background-color:  rgba(13, 13, 40, 1);
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode a {
+    color: #cfcfcf;
+}
+
+body.dark-mode .filme1,
+body.dark-mode .filme2 {
+    background-color:  rgba(13, 13, 40, 1);
+}
+
+@media (max-width: 1024px) {
+  input {
+    width: 90%;
+  }
+
+  .icones {
+    gap: 15px;
+    width: 30%;
+    justify-content: flex-end;
+  }
+
+  header {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .filmes1,
+  .filmes2 {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .filme1,
+  .filme2 {
+    width: 40%;
+    height: auto;
+  }
+
+  .filme1:hover,
+  .filme2:hover {
+    width: 42%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .icones{
+    width: 30%;
+    gap: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  input {
+    width: 100%;
+  }
+
+  .filme1,
+  .filme2 {
+    width: 80%;
+    height: auto;
+  }
+
+  .filme1:hover,
+  .filme2:hover {
+    width: 85%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  #logocinedica2 {
+    width: 180px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pesquisa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  input {
+    width: 90%;
+    height: 35px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .filme1,.filme2 {
+    width: 80%;
+  }
+
+  .filme1:hover,.filme2:hover {
+    width: 100%;
+  }
+
+  footer section {
+    width: 100%;
+  }
+}

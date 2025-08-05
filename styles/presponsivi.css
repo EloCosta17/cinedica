@@ -1,0 +1,172 @@
+body {
+      margin: 0;
+      font-family: Verdana;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 10px 30px;
+      gap: 20px;
+    }
+
+    .pesquisa {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    input {
+      width: 100%;
+      max-width: 700px;
+      height: 50px;
+    }
+
+    .icones {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-shrink: 0;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      background: none;
+      color: white;
+    }
+
+    nav {
+      background-color: rgba(104, 102, 197, 1);
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 0 10px;
+    }
+
+    footer {
+      margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      background-color: rgba(104, 102, 197, 1);
+      padding: 25px 0px;
+      gap: 100px;
+      color: white;
+    }
+
+    .copyright {
+      text-align: center;
+      background-color: rgba(104, 102, 197, 1);
+      margin-top: 2px;
+      color: white;
+    }
+
+    #logocinedica2 {
+      width: 250px;
+      height: 70px;
+    }
+
+    input:hover {
+      background-color: lightgray;
+      transition: 0.5s;
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+      background-color: rgba(13, 13, 40, 1);
+      color: white;
+    }
+
+    body.dark-mode nav,
+    body.dark-mode footer,
+    body.dark-mode .copyright {
+      background-color: rgba(104, 102, 197, 1);
+      color: white;
+    }
+
+    body.dark-mode input {
+      background-color: rgba(13, 13, 40, 1);
+      color: white;
+      border: 1px solid #555;
+    }
+
+    body.dark-mode a {
+      color: #cfcfcf;
+    }
+
+    /* Responsividade */
+    @media (max-width: 1024px) {
+      input {
+        width: 90%;
+      }
+
+      .icones {
+        gap: 15px;
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+        padding: 10px 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .icones {
+        width: auto;
+        gap: 5%;
+        flex-direction: row;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+      }
+
+      #logocinedica2 {
+        width: 180px;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .pesquisa {
+        width: 100%;
+        justify-content: center;
+      }
+
+      input {
+        width: 90%;
+        height: 35px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      footer section {
+        width: 100%;
+      }
+    }
