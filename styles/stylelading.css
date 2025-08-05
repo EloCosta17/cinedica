@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     margin: 0%;
     font-family: Verdana;
@@ -5,14 +11,25 @@ body{
 header{
     display: flex;
     align-items: center;
-    gap: 100px;
+    justify-content: space-between;
+    width: 80%;
+    gap: 20px;
+
+    > img {
+        height: 60px;
+    }
 }
 .container{
     padding-top: 25px;
     padding-bottom: 40px;
 }
+.pesquisa {
+    flex-grow: 1;
+    max-width: 300px;
+    width: 10vw;
+}
 input{
-    width: 700px;
+    width: 100%;
     height: 40px;
 }
 button{
