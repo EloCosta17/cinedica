@@ -149,6 +149,12 @@ a{
     justify-content: center;
     gap: 100px;
 }
+.avaliacoes > .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
 footer{
     margin-top: 80px;
     display: flex;
