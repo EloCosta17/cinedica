@@ -30,8 +30,8 @@ button{
 .icones{
     display: flex;
     align-items: center;
-    width: 40px;
     gap: 30px;
+    width: 40px;
 }
 nav{
     background-color: rgba(104, 102, 197, 1);

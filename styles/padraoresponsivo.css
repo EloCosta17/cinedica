@@ -20,8 +20,8 @@ button{
 .icones{
     display: flex;
     align-items: center;
-    width: 30%;
     gap: 30px;
+    width: 40px;
 }
 .container{
     padding-top: 25px;
@@ -223,6 +223,14 @@ body.dark-mode .filme2 {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+  .icones {
+    gap: 15px;
+    width: 60%;
+    justify-content: flex-end;
+    margin-bottom: 3%;
+    margin-left: 5%;
   }
 
   input {

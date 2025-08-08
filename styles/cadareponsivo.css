@@ -1,5 +1,5 @@
-body {
-    margin: 0;
+body{
+    margin: 0%;
     font-family: Verdana;
 }
 header{
@@ -20,18 +20,17 @@ button{
 .icones{
     display: flex;
     align-items: center;
-    width: 30%;
     gap: 30px;
+    width: 40px;
 }
-nav {
+nav{
     background-color: rgba(104, 102, 197, 1);
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 30px;
-    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 a {
     text-decoration: none;
@@ -111,6 +110,13 @@ body.dark-mode .poster img {
         width: 250px;
         height: 350px;
     }
+
+    nav {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+    padding: 10px 15px;
+  }
 }
 @media (max-width: 768px) {
     header {
@@ -121,11 +127,13 @@ body.dark-mode .poster img {
     input {
         width: 90%;
     }
-    .icones {
-        justify-content: center;
-        width: auto;
-        gap: 20px;
-    }
+    .icones{
+        width: 30%;
+        gap: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+  }
     .poster img {
         width: 90%;
         height: auto;
@@ -150,6 +158,51 @@ body.dark-mode .poster img {
         margin-left: 0;
         text-align: center;
     }
+    #logocinedica2 {
+        width: 180px;
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+ header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pesquisa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icones {
+    gap: 15px;
+    width: 60%;
+    justify-content: flex-end;
+    margin-bottom: 3%;
+    margin-left: 5%;
+  }
+
+  input {
+    width: 90%;
+    height: 35px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+}
+   footer {
+    flex-direction: column;
+    gap: 20px;
+}
+   .informacao {
+    margin-left: 0;
+    text-align: center;
+}
     #logocinedica2 {
         width: 180px;
         height: auto;
