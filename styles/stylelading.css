@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body{
     margin: 0%;
     font-family: Verdana;
@@ -19,7 +13,7 @@ header{
 }
 input{
     width: 700px;
-    height: 40px;
+    height: 50px;
 }
 button{
     border: none;
