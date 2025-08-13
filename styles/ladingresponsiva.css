@@ -339,13 +339,18 @@ body.dark-mode .filme2 {
     }
 
     footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
 
-
+    #logocinedica2 {
+    width: 180px;
+    height: auto;
+  }
 }
+
 
 @media (max-width: 480px) {
     /* Celulares pequenos */
@@ -406,5 +411,10 @@ body.dark-mode .filme2 {
 
     #banner {
         height: 400px;
+    }
+
+    #todos{
+        text-align: left;
+
     }
 }

@@ -189,9 +189,11 @@ body.dark-mode .poster img {
     }
 
     footer {
-        flex-direction: column;
-        gap: 20px;
-    }
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
 
     .informacao {
         margin-left: 0;
@@ -202,7 +204,13 @@ body.dark-mode .poster img {
         width: 180px;
         height: auto;
     }
+
+    #logocinedica2 {
+    width: 180px;
+    height: auto;
+  }
 }
+
 
 @media (max-width: 480px) {
   header {
@@ -232,6 +240,7 @@ body.dark-mode .poster img {
   nav a {
     font-size: 12px;
   }
+
 
   footer section {
     width: 100%;
